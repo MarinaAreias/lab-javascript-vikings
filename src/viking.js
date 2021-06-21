@@ -1,12 +1,8 @@
 // Soldier
 class Soldier {
-  constructor(health, strength) {}
-  attack = () => {
-    return this.strength;
-  };
-  receiveDamage = (damage) => {
-    return this.health;
-  };
+  constructor(health, strength) {
+    (this.attack = strength), (this.receiveDamage = health);
+  }
 }
 
 // Viking
